@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* 宽度为屏宽的一半，高度为屏高的一半，然后居中 */
+        #boss{
+            width: 1620px;
+            height: 780px;
+            background-image: url(img/white.jpg);
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        #box{
+            width:650px;
+            height:320px;
+            margin:0 ;
+            overflow: hidden;
+
+        }
+        /* 清除li样式 */
+        ul,li{
+            list-style: none;
+        }
+        h1{
+            padding-left: 580px;
+            font: 100px/2.0em  "comic sans ms";
+        }
+        h5{
+            text-indent: 580px;
+            font: 60px/1.0em  "comic sans ms";
+        }
+        #box>ul{
+            position:relative;
+            display:flex;
+        }
+        /* 将三个li宽度平分，高度60px */
+        #box>ul>li{
+            width: 217px;
+            height:60px;
+        }
+        #zhangh,#password
+        {
+            width: 280px;
+            height:40px ;
+            margin-left: 75px;
+            margin-top: 20px;
+        }
+
+        #submit
+        {
+            width: 280px;
+            height:40px ;
+            background-color: #69d569;
+            margin-top: 20px;
+            margin-left: 75px;
+            margin-bottom: 20px;
+        }
+        p{
+            margin-top: 10px;
+            margin-left: 75px;
+        }
+        /* input隐藏 */
+        #box>ul>li>input{
+            display:none;
+        }
+        /* 设置input的下一个节点label的样式 */
+        input+label{
+            display:block;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.5);
+            font-size:18px;
+            text-align: center;
+            line-height: 60px;
+            color:rgba(0,0,0,0.5);
+        }
+        /* 设置div内容的基础样式 隐藏内容div*/
+        input+label+div{
+            display:none;
+            position: absolute;
+            left:0;
+            top:60px;
+        }
+        /* input选中状态时候对应的label的样式 */
+        input:checked+label{
+            background: white;
+            color:black;
+        }
+        /* input选中时候显示对应的div */
+        input:checked+label+div{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<div id="boss" style="position: relative">
+    <div id="logo" style="width: 1080px;height: 300px;background-color: rgba(0,0,0,0);">
+        <h1>LOFTER</h1>
+        <h5>让乐趣.更有趣</h5>
+    </div>
+    <div id="box" style="position:absolute;top: 300px;left: 440px;">
+        <ul>
+            <li>
+                <input type="radio" name="check" id="active1" checked><label for="active1">注册</label>
+                <div>
+                    <div id="zc" style="width: 650px;height: 350px;background-color: white;">
+                        <div id="left" style="width:434px ;height: 240px;float: left;display: inline-block;background-image: url(img/sjzc.png);">
+                        </div>
+                        <a ><div id="right" style="width: 140px;height: 35px;float: left;padding-top: 10px;display: inline-block;">
+                            <ul id="zzc">
+                                <li><a href="#"><img src="img/sj.png"/></a></li>
+                                <li><a href="#"><img src="img/xl.png"/></a></li>
+                                <li><a href="#"><img src="img/qq.png"/></a></li>
+                                <li><a href="#"><img src="img/wx.png"/></a></li>
+                            </ul>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="check" id="active2"><label for="active2">登录</label>
+                <div>
+                    <div id="zc" style="width: 650px;height: 350px;background-color: white;">
+                        <div id="left1" style="width:434px ;height: 240px;float: left;">
+                            <form  action="#" method="post">
+                                <fieldset id="">
+                                    <legend></legend>
+                                    <input type="text" name="zhangh" id="zhangh"   placeholder="    常用邮箱/网易邮箱"/>
+                                    <input type="password" name="password" id="password"  placeholder="    密码"/>
+                                    <p>使用<a href="#">网易账号管家</a>，全面保护您的账户</p>
+                                    <input type="submit" name="submit" id="submit" value="登录" />
+                                </fieldset>
+                            </form>
+                        </div>
+                        <a ><div id="right1" style="width: 140px;height: 35px;float: left;padding-top: 10px;display: inline-block;">
+                            <ul id="zzc">
+                                <li><a href="#"><img src="img/sjdl.png"/></a></li>
+                                <li><a href="#"><img src="img/xldl.png"/></a></li>
+                                <li><a href="#"><img src="img/qqdl.png"/></a></li>
+                                <li><a href="#"><img src="img/wxdl.png"/></a></li>
+                            </ul>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="check" id="active3"><label for="active3">下载APP</label>
+                <div id="xz" style="width: 650px;height: 350px;background-color: white;padding-top: 20px;padding-left: 30px;">
+                    <img src="img/ewm.png" />
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

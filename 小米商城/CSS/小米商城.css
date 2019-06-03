@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eeeeee;
+}
+.center {
+    max-width: 1220px;
+    margin: auto;
+}
+.top{
+    height: 58px;
+}
+.center .top a:hover{
+    color: darkorange;
+}
+.span{
+    float: left;
+    font-size: 22px;
+    color: #333333;
+    line-height: 58px;
+}
+.one{
+    float: right;
+}
+.top li{
+    list-style-type: none;
+    float: left;
+    margin: 10px;
+    line-height: 38px;
+    font-size: 22px;
+}
+.center a{
+    color: #333333;
+    text-decoration: none;
+}
+.two{
+    height: 620px;
+    width: 1240px;
+
+    float: left;
+}
+.a{
+    height: 300px;
+    width: 234px;
+    margin-bottom: 10px;
+}
+.left{
+    width: 234px;
+    height:620px;
+    float: left;
+}
+li{
+    list-style-type: none;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    float: left;
+}
+.right{
+    float: left;
+    width: 990px;
+    height: 620px;
+}
+.right-one{
+    background-color: #FFFFFF;
+    height: 300px;
+    width: 234px;
+}
+.right-one-a {
+    margin:0 auto;
+    width: 64px;
+    height: 23px;
+    background: #e53935;
+    text-align: center;
+    color: white;
+}
+.right-one-b{
+    margin-left: 37px;
+    width: 160px;
+    height: 160px;
+}
+.right-two p{
+    margin: 10px;
+}
+.right-three{
+    width: 234px;
+    height: 143px;
+    background-color: #FFFFFF;
+}

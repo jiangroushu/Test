@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.site-category{
+    width: 234px;
+    height: 460px;
+    border: 1px solid;
+    background-color: #333333;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    line-height: 42px;
+    color: #FFFFFF;
+    padding-left: 20px;
+}
+li:hover{
+    background-color: #ff6700;
+}

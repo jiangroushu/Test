@@ -1,0 +1,270 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    height: 80px;
+    width: 1190px;
+    margin: auto;
+}
+.header-con{
+    height: 50px;
+    width: 200px;
+    margin-top: 15px;
+    float: left;
+}
+.header-welcome{
+    float: left;
+    padding-left: 40px;
+    font-size: 20px;
+    height: 80px;
+    line-height: 80px;
+}
+.section-first {
+    height: 600px;
+    position: relative;
+}
+.fullSlide {
+    position: relative;
+    width: 100%;
+}
+.fullSlide .bd .tempWrap{
+    height: 600px;
+    width: 1440px;
+    overflow: hidden;
+}
+.fullSlide .bd li {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    float: left;
+    animation: imgMove 20s linear infinite;
+}
+.fullSlide .bd a {
+    display: block;
+    height: 600px;
+}
+.bd .tempWrap ul{
+    height: 600px;
+    width: 5760px;
+}
+@keyframes imgMove{
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-4320px);
+    }
+}
+.login-box {
+    background: #fff;
+    width: 380px;
+    margin-top: -298px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 215px;
+}
+.login-box .login-hd {
+    height: 78px;
+    line-height: 78px;
+    padding: 0 30px;
+}
+.login-box .login-hd .login-hd-code {
+    margin-right: 60px;
+}
+.login-box .login-hd li {
+    float: left;
+    width: 130px;
+    text-align: center;
+    position: relative;
+}
+.login-box .login-hd .login-hd-code::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: -30px;
+    width: 1px;
+    height: 24px;
+    background: #EFEFEF;
+}
+.login-box .login-hd .active a {
+    color: #3B99FC;
+}
+.login-box .login-hd a {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    cursor: pointer;
+}
+.login-code .login-code-con {
+    height: 270px;
+    padding: 0 30px;
+}
+.login-code .login-code-main {
+    height: 200px;
+    position: relative;
+}
+.login-box .login-code .code-pic {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid #EFEFEF;
+}
+.login-code .code-pic img {
+    width: 158px;
+    height: 158px;
+}
+.login-code .login-code-txt {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 200px;
+}
+.login-code .login-code-txt1 {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.login-box .txt-primary {
+    color: #3B99FC !important;
+}
+.login-code .login-code-ft {
+    padding: 16px 0 16px 30px;
+    margin-top: 70px;
+}
+.login-code .login-code-ft::before, .login-code .login-code-ft::after {
+    content: "";
+    display: table;
+}
+.login-code .login-code-ft li {
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    margin-right: 40px;
+    color: #999;
+}
+.login-code .login-code-ft .last {
+    margin-right: 0;
+}
+.login-ft {
+    padding: 10px 20px 15px;
+    font-size: 13px;
+    color: #666;
+    border-top: 1px solid #EFEFEF;
+    margin-top: 58px;
+}
+.footer {
+    background: #fff;
+}
+ .footer .wrapper{
+    width: 1200px;
+     height: 162px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer .footer-con {
+    padding: 20px 0;
+}
+.footer .footer-con::before, .footer .footer-con::after {
+    content: "";
+    display: table;
+}
+.footer .foot-links {
+    float: left;
+    width: 425px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+.footer .foot-con-tit {
+    height: 54px;
+    line-height: 54px;
+    font-size: 14px;
+}
+.footer .foot-links-list {
+    height: 100px;
+}
+.footer .foot-links-list::before, .footer .foot-links-list::after {
+    content: "";
+    display: table;
+}
+.footer .foot-links-list li {
+    margin: 0 10px 10px 0;
+    float: left;
+}
+.footer .foot-links-list a{
+    float: left;
+}
+.footer .foot-links-list img {
+    display: block;
+    width: 200px;
+    height: 34px;
+    border: 1px solid #EFEFEF;
+}
+.footer .foot-code {
+    float: left;
+}
+.footer .foot-code li {
+    float: left;
+    width: 140px;
+    text-align: center;
+}
+.footer .foot-code img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #EFEFEF;
+}
+.footer .foot-code .code-tips {
+    position: absolute;
+    top: 754px;
+    left: 1168px;
+    width: 168px;
+    height: 58px;
+    border: 1px solid #EFEFEF;
+    background-color: #fff;
+    background-image: url("../image/bg-train.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    line-height: 18px;
+    padding: 12px 10px;
+    font-size: 12px;
+    text-align: left;
+}
+.footer .foot-code .code-tips::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 34px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    border-width: 6px;
+    cursor: pointer;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent #EFEFEF transparent transparent;
+    border-left: none;
+}
+.footer .footer-txt {
+    text-align: center;
+    padding: 10px 0;
+    background: #666;
+    color: #c1c1c1;
+}
+.footer .footer-txt p {
+    line-height: 30px;
+}
+.mr {
+    margin-right: 10px !important;
+}

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?1x1j55');
+    src:  url('../fonts/icomoon.eot?1x1j55#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?1x1j55') format('truetype'),
+    url('../fonts/icomoon.woff?1x1j55') format('woff'),
+    url('../fonts/icomoon.svg?1x1j55#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+li {
+    list-style-type: none;
+    display: list-item;
+}
+a {
+    color: #757575;
+    text-decoration: none;
+    cursor: pointer;
+}
+body {
+    color: #333;
+    background-color: #ffffff;
+    font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+/*清除浮动*/
+.clearfix:before,.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+
+/*home-nav-bar 右侧固定定位的导航栏*/
+.home-nav-bar {
+    position: fixed;
+    top: 240px;
+    bottom: 70px;
+    width: 27px;
+    right: 50%;
+    margin-right: -640px;
+    z-index: 9999;
+}
+.bar-right .mi-bar-sort {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #f5f5f5;
+}
+.bar-right .mi-bar-sort .bar-sort {
+    width: 25px;
+    height: 39px;
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #f5f5f5;
+    border-top: none;
+    font-size: 18px;
+    line-height: 39px;
+    text-align: center;
+}
+.home-nav-bar .sort-link {
+    display: block;
+    height: 100%;
+}
+.bar-right .bar-sort .iconfont:hover {
+    color: #ff6700;
+}
+.bar-right .bar-sort .iconfont {
+    font-family: 'icomoon',serif;
+    font-style: normal;
+}
+.bar-right .bar-sort .bar-pop {
+    position: absolute;
+    top: 0;
+    left: -137px;
+    height: 187px;
+    width: auto;
+    display: none;
+}
+.bar-sort .sort-link:hover .bar-pop {
+    display: block;
+}
+.bar-sort .bar-pop .pop-content {
+    float: left;
+    height: 187px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+}
+.bar-pop .pop-img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 14px;
+    background-color: #fff;
+    border: 0;
+}
+.bar-pop .pop-text {
+    width: 83px;
+    line-height: 21px;
+    margin: -10px auto 0;
+    padding: 0 8px;
+    height: 27px;
+    background-color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.bar-pop .pop-rack {
+    background-color: #ffffff;
+    width: 10px;
+    height: 10px;
+    float: right;
+    transform: rotate(45deg);
+    position: relative;
+    top: 14px;
+    right: 7px;
+}
+.bar-right .bar-sort .sort-link .bar-pop-s {
+    position: absolute;
+    left: -135px;
+    top: 6px;
+    width: 126px;
+    height: 27px;
+}
+.bar-right .bar-sort .sort-link .bar-pop-s .pop-text {
+    float: right;
+    padding: 0 8px;
+    height: 27px;
+    line-height: 27px;
+    background: #fff;
+    border: 1px solid #f5f5f5;
+    margin: 0;
+    color: #757575;
+    font-size: 14px;
+    text-align: center;
+}
+.bar-right .bar-sort .sort-link .bar-pop-s .pop-rack {
+    right: -105px;
+    top: 10px;
+}
